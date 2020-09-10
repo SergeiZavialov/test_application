@@ -2,4 +2,5 @@
     <string name="app_name">test_application</string>
 
     <string name="button_to_glide">To Glide</string>
+    <string name="button_load_picture">Load picture</string>
 </resources>
