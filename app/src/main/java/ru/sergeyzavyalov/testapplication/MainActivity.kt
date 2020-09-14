@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.sergeyzavyalov.testapplication.databinding.ActivityMainBinding
+import ru.sergeyzavyalov.testapplication.exoplayer.ExoplayerActivity
 import ru.sergeyzavyalov.testapplication.glideimages.GlideImagesActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
     private fun setupClicks() {
         binding.btToGlide.setOnClickListener {
             val intent = Intent(this, GlideImagesActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btToExoplayer.setOnClickListener {
+            val intent = Intent(this, ExoplayerActivity::class.java)
 
             startActivity(intent)
         }

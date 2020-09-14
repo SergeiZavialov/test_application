@@ -2,5 +2,7 @@
     <string name="app_name">test_application</string>
 
     <string name="button_to_glide">To Glide</string>
+    <string name="button_to_player">To Exoplayer</string>
     <string name="button_load_picture">Load picture</string>
+    <string name="button_start_play">Start play</string>
 </resources>
