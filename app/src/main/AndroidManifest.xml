@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".exoplayer.ExoplayerActivity"></activity>
-        <activity android:name=".glideimages.GlideImagesActivity"></activity>
+        <activity android:name=".exoplayer.ExoplayerActivity" />
+        <activity android:name=".glideimages.GlideImagesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

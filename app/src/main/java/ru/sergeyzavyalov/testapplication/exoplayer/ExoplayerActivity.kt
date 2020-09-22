@@ -12,7 +12,9 @@ class ExoplayerActivity : AppCompatActivity() {
 
     private lateinit var exoPlayer: SimpleExoPlayer
 
-    private val mediaItem = MediaItem.fromUri("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3")
+    private val audioItem = MediaItem.fromUri("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3")
+
+    private val videoItem = MediaItem.fromUri("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,16 +26,30 @@ class ExoplayerActivity : AppCompatActivity() {
 
         with(binding) {
             playerView.player = exoPlayer
-            exoPlayer.setMediaItem(mediaItem)
-            exoPlayer.prepare()
 
-            btStartPlay.setOnClickListener {
+            btPlayAudio.setOnClickListener {
+                exoPlayer.setMediaItem(audioItem)
+                exoPlayer.prepare()
                 startPlay()
+            }
+
+            btPlayVideo.setOnClickListener {
+                exoPlayer.setMediaItem(videoItem)
+                exoPlayer.prepare()
+                startPlay()
+            }
+
+            btStopPlay.setOnClickListener {
+                stopPlay()
             }
         }
     }
 
     private fun startPlay() {
         exoPlayer.play()
+    }
+
+    private fun stopPlay() {
+        exoPlayer.stop(true)
     }
 }

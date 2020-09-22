@@ -4,5 +4,7 @@
     <string name="button_to_glide">To Glide</string>
     <string name="button_to_player">To Exoplayer</string>
     <string name="button_load_picture">Load picture</string>
-    <string name="button_start_play">Start play</string>
+    <string name="button_start_play_audio">Start play audio</string>
+    <string name="button_start_play_video">Start play video</string>
+    <string name="button_stop_play">Stop play</string>
 </resources>
