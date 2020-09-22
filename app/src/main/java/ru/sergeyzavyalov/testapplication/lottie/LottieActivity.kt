@@ -9,7 +9,6 @@ class LottieActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLottieBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -21,6 +20,10 @@ class LottieActivity : AppCompatActivity() {
                 avRobot.playAnimation()
                 avMoneyBag.playAnimation()
             }
+
+            avFromNetworkFirst.setAnimationFromUrl("https://assets5.lottiefiles.com/packages/lf20_tFYxgv.json")
+
+            avFromNetworkSecond.setAnimationFromUrl("https://assets8.lottiefiles.com/datafiles/AdjEeDEH5vWvOwB/data.json")
         }
     }
 }

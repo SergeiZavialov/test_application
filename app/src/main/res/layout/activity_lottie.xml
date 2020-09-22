@@ -1,75 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lottie.LottieActivity">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tvAutoPlay"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/auto_play"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/avCat"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toStartOf="@id/avTeacher"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAutoPlay"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="cute_cat_works.json"
-        app:lottie_repeatCount="-1" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAutoPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/auto_play"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/avTeacher"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/avCat"
-        app:layout_constraintTop_toBottomOf="@id/tvAutoPlay"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="teacher.json" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avCat"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toStartOf="@id/avTeacher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAutoPlay"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cute_cat_works.json"
+            app:lottie_repeatCount="-1" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tvNonAutoPlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="@string/non_auto_play"
-        app:layout_constraintTop_toBottomOf="@id/avCat" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avTeacher"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/avCat"
+            app:layout_constraintTop_toBottomOf="@id/tvAutoPlay"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="teacher.json" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/avRobot"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toStartOf="@id/avMoneyBag"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvNonAutoPlay"
-        app:lottie_fileName="robot_playing_computer.json"
-        app:lottie_repeatCount="-1" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNonAutoPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/non_auto_play"
+            app:layout_constraintTop_toBottomOf="@id/avCat" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/avMoneyBag"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/avRobot"
-        app:layout_constraintTop_toBottomOf="@id/tvNonAutoPlay"
-        app:lottie_fileName="money_bag.json" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avRobot"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toStartOf="@id/avMoneyBag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNonAutoPlay"
+            app:lottie_fileName="robot_playing_computer.json"
+            app:lottie_repeatCount="-1" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btStartAnim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_start_animation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/avRobot" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avMoneyBag"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/avRobot"
+            app:layout_constraintTop_toBottomOf="@id/tvNonAutoPlay"
+            app:lottie_fileName="money_bag.json" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btStartAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start_animation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avRobot" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFromNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/from_network"
+            app:layout_constraintTop_toBottomOf="@id/btStartAnim" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avFromNetworkFirst"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toStartOf="@id/avFromNetworkSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFromNetwork"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="-1" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/avFromNetworkSecond"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/avFromNetworkFirst"
+            app:layout_constraintTop_toBottomOf="@id/tvFromNetwork" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

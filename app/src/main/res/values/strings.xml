@@ -17,5 +17,6 @@
     <!--Lottie Activity-->
     <string name="auto_play">Auto play animation</string>
     <string name="non_auto_play">Non auto-play animation</string>
+    <string name="from_network">Animation, loaded from network</string>
     <string name="button_start_animation">Start Animation</string>
 </resources>
