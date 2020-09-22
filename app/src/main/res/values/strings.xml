@@ -1,10 +1,21 @@
 <resources>
     <string name="app_name">test_application</string>
 
+   <!--Main Activity-->
     <string name="button_to_glide">To Glide</string>
     <string name="button_to_player">To Exoplayer</string>
+    <string name="button_to_lottie">To Lottie</string>
+
+    <!--Glide Activity-->
     <string name="button_load_picture">Load picture</string>
+
+    <!--ExoPlayer Activity-->
     <string name="button_start_play_audio">Start play audio</string>
     <string name="button_start_play_video">Start play video</string>
     <string name="button_stop_play">Stop play</string>
+
+    <!--Lottie Activity-->
+    <string name="auto_play">Auto play animation</string>
+    <string name="non_auto_play">Non auto-play animation</string>
+    <string name="button_start_animation">Start Animation</string>
 </resources>

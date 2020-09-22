@@ -11,19 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_to_glide"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btToExoplayer"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btToExoplayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_to_player"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btToLottie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btToGlide"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btToGlide" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btToLottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_to_lottie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btToExoplayer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
