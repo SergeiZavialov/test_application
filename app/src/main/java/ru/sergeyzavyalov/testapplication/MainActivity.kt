@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.sergeyzavyalov.testapplication.databinding.ActivityMainBinding
 import ru.sergeyzavyalov.testapplication.exoplayer.ExoplayerActivity
-import ru.sergeyzavyalov.testapplication.glideimages.GlideImagesActivity
+import ru.sergeyzavyalov.testapplication.images.ImagesActivity
 import ru.sergeyzavyalov.testapplication.lottie.LottieActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupClicks() {
-        binding.btToGlide.setOnClickListener {
-            val intent = Intent(this, GlideImagesActivity::class.java)
+        binding.btToImageLoaders.setOnClickListener {
+            val intent = Intent(this, ImagesActivity::class.java)
 
             startActivity(intent)
         }

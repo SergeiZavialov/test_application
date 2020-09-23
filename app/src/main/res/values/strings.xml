@@ -2,12 +2,18 @@
     <string name="app_name">test_application</string>
 
    <!--Main Activity-->
-    <string name="button_to_glide">To Glide</string>
+    <string name="button_to_image_loaders">To Image Loaders</string>
     <string name="button_to_player">To Exoplayer</string>
     <string name="button_to_lottie">To Lottie</string>
 
-    <!--Glide Activity-->
-    <string name="button_load_picture">Load picture</string>
+    <!--Images Activity-->
+    <string name="glide_image">Glide image</string>
+    <string name="picasso_image">Picasso image</string>
+    <string name="coil_image">Coil image</string>
+    <string name="button_load_picture">Load pictures</string>
+    <string name="button_load_gifs">Load gifs</string>
+    <string name="glide_gif">Glide gif</string>
+    <string name="coil_gif">Coil gif</string>
 
     <!--ExoPlayer Activity-->
     <string name="button_start_play_audio">Start play audio</string>

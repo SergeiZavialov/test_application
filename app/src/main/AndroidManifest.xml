@@ -18,7 +18,7 @@
         tools:ignore="AllowBackup">
         <activity android:name=".lottie.LottieActivity" />
         <activity android:name=".exoplayer.ExoplayerActivity" />
-        <activity android:name=".glideimages.GlideImagesActivity" />
+        <activity android:name=".images.ImagesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

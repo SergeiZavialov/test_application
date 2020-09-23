@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btToGlide"
+        android:id="@+id/btToImageLoaders"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_to_glide"
+        android:text="@string/button_to_image_loaders"
         app:layout_constraintBottom_toTopOf="@id/btToExoplayer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintBottom_toTopOf="@id/btToLottie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btToGlide" />
+        app:layout_constraintTop_toBottomOf="@id/btToImageLoaders" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btToLottie"

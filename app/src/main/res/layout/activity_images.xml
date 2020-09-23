@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".images.ImagesActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvGlideImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/glide_image"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/tvPicassoImage"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPicassoImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/picasso_image"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/tvCoilImage"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tvGlideImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCoilImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/coil_image"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tvPicassoImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivGlideImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="@id/tvGlideImage"
+        app:layout_constraintStart_toStartOf="@id/tvGlideImage"
+        app:layout_constraintTop_toBottomOf="@id/tvGlideImage"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivPicassoImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="@id/tvPicassoImage"
+        app:layout_constraintStart_toStartOf="@id/tvPicassoImage"
+        app:layout_constraintTop_toBottomOf="@id/tvPicassoImage"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivCoilImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="@id/tvCoilImage"
+        app:layout_constraintStart_toStartOf="@id/tvCoilImage"
+        app:layout_constraintTop_toBottomOf="@id/tvCoilImage"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loadPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_load_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPicassoImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvGlideGif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/glide_gif"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvCoilGif"
+        app:layout_constraintTop_toBottomOf="@id/loadPicture" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCoilGif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/coil_gif"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvGlideGif"
+        app:layout_constraintTop_toBottomOf="@id/loadPicture" />
+
+    <ImageView
+        android:id="@+id/ivGlideGif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="@id/tvGlideGif"
+        app:layout_constraintStart_toStartOf="@id/tvGlideGif"
+        app:layout_constraintTop_toBottomOf="@id/tvGlideGif"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivCoilGif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="@id/tvCoilGif"
+        app:layout_constraintStart_toStartOf="@id/tvCoilGif"
+        app:layout_constraintTop_toBottomOf="@id/tvCoilGif"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btLoadGifs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_load_gifs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCoilGif" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
