@@ -6,18 +6,16 @@ orbs:
 jobs:
   build:
     executor: android/android
-
     steps:
       - checkout
       - run:
           command: ./gradlew build
 
 workflows:
-  version: 1
-  workflow:
+  version: 2
+  build_only_master:
     jobs:
       - build:
         filters:
           branches:
-            only:
-              - master
+            only: master
