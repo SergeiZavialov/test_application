@@ -26,4 +26,6 @@ class LottieActivity : AppCompatActivity() {
             avFromNetworkSecond.setAnimationFromUrl("https://assets8.lottiefiles.com/datafiles/AdjEeDEH5vWvOwB/data.json")
         }
     }
+
+    private fun doAny() {}
 }
