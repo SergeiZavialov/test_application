@@ -1,8 +1,9 @@
 package ru.sergeyzavyalov.testapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import by.kirich1409.viewbindingdelegate.viewBinding
 import ru.sergeyzavyalov.testapplication.databinding.ActivityMainBinding
 import ru.sergeyzavyalov.testapplication.exoplayer.ExoplayerActivity
 import ru.sergeyzavyalov.testapplication.images.ImagesActivity
@@ -10,12 +11,11 @@ import ru.sergeyzavyalov.testapplication.lottie.LottieActivity
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding by viewBinding<ActivityMainBinding>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupClicks()
