@@ -1,9 +1,9 @@
 package ru.sergeyzavyalov.testapplication.images
 
-import android.graphics.drawable.Drawable
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import by.kirich1409.viewbindingdelegate.viewBinding
 import coil.ImageLoader
 import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
@@ -15,16 +15,15 @@ import ru.sergeyzavyalov.testapplication.databinding.ActivityImagesBinding
 
 class ImagesActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityImagesBinding
-    private val image = "https://smartcdn.prod.postmedia.digital/devondispatch/images?url=https://postmediacanoe.files.wordpress.com/2019/07/gettyimages-910314172-e1564420108411.jpg&w=840&h=630"
+    private val binding by viewBinding<ActivityImagesBinding>()
+    private val image =
+        "https://smartcdn.prod.postmedia.digital/devondispatch/images?url=https://postmediacanoe.files.wordpress.com/2019/07/gettyimages-910314172-e1564420108411.jpg&w=840&h=630"
     private val gifFirst = "https://media.giphy.com/media/WXB88TeARFVvi/giphy.gif"
 
     private lateinit var imageLoader: ImageLoader
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityImagesBinding.inflate(layoutInflater)
 
         imageLoader = ImageLoader.Builder(this)
             .componentRegistry {
@@ -79,7 +78,7 @@ class ImagesActivity : AppCompatActivity() {
             .into(binding.ivGlideGif)
     }
 
-    private fun loadGifWithCoil () {
+    private fun loadGifWithCoil() {
         binding.ivCoilGif.load(gifFirst, imageLoader)
     }
 }

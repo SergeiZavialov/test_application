@@ -1,5 +1,8 @@
 *.iml
+# Gradle files
 .gradle
+.gradle/
+build/
 /local.properties
 .DS_Store
 /build
@@ -7,3 +10,4 @@
 .externalNativeBuild
 .cxx
 /.idea/
+.idea/
