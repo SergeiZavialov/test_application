@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">test_application</string>
 
-   <!--Main Activity-->
+    <!--Main Activity-->
     <string name="button_to_image_loaders">To Image Loaders</string>
     <string name="button_to_player">To Exoplayer</string>
     <string name="button_to_lottie">To Lottie</string>
+    <string name="button_to_result_api">To Result Api</string>
 
     <!--Images Activity-->
     <string name="glide_image">Glide image</string>
@@ -25,4 +26,9 @@
     <string name="non_auto_play">Non auto-play animation</string>
     <string name="from_network">Animation, loaded from network</string>
     <string name="button_start_animation">Start Animation</string>
+
+    <!--ResultApi Activity-->
+    <string name="from_camera">From Camera</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="custom_contract">Custom Contract</string>
 </resources>

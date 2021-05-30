@@ -4,47 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity_result_api.ResultApiActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btToImageLoaders"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_to_image_loaders"
-        app:layout_constraintBottom_toTopOf="@id/btToExoplayer"
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        tools:ignore="ContentDescription" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btToExoplayer"
+        android:id="@+id/btnFromCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_to_player"
-        app:layout_constraintBottom_toTopOf="@id/btToLottie"
+        android:layout_marginTop="20dp"
+        android:text="@string/from_camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btToImageLoaders" />
+        app:layout_constraintTop_toBottomOf="@id/ivImage" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btToLottie"
+        android:id="@+id/btnFromGallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_to_lottie"
-        app:layout_constraintBottom_toTopOf="@id/btnToActivityResult"
+        android:text="@string/from_gallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btToExoplayer" />
+        app:layout_constraintTop_toBottomOf="@id/btnFromCamera" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToActivityResult"
+        android:id="@+id/btn_custom_contract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_to_result_api"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="@string/custom_contract"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btToLottie" />
+        app:layout_constraintTop_toBottomOf="@id/btnFromGallery" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

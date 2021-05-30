@@ -52,6 +52,7 @@ class ExoplayerActivity : AppCompatActivity() {
     }
 
     private fun stopPlay() {
-        exoPlayer.stop(true)
+        exoPlayer.stop()
+        exoPlayer.clearMediaItems()
     }
 }
