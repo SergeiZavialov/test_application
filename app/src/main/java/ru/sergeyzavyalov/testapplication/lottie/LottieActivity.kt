@@ -3,9 +3,10 @@ package ru.sergeyzavyalov.testapplication.lottie
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
+import ru.sergeyzavyalov.testapplication.R
 import ru.sergeyzavyalov.testapplication.databinding.ActivityLottieBinding
 
-class LottieActivity : AppCompatActivity() {
+class LottieActivity : AppCompatActivity(R.layout.activity_lottie) {
 
     private val binding by viewBinding<ActivityLottieBinding>()
 

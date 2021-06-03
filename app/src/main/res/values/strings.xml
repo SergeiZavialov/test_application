@@ -29,6 +29,7 @@
 
     <!--ResultApi Activity-->
     <string name="from_camera">From Camera</string>
+    <string name="from_camera_preview">From Camera (Preview)</string>
     <string name="from_gallery">From Gallery</string>
     <string name="custom_contract">Custom Contract</string>
 </resources>
