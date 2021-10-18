@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply plugin: "de.mannodermaus.android-junit5"
 
 android {
@@ -30,12 +31,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
-    }
 }
 
 dependencies {
@@ -62,4 +57,6 @@ dependencies {
     // View Binding delegate
     implementation 'com.github.kirich1409:viewbindingpropertydelegate:1.4.4'
 
+    // Bank card scanner
+    implementation 'cards.pay:paycardsrecognizer:1.1.0'
 }

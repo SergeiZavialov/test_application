@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso
 import ru.sergeyzavyalov.testapplication.R
 import ru.sergeyzavyalov.testapplication.databinding.ActivityImagesBinding
 
-class ImagesActivity : AppCompatActivity() {
+class ImagesActivity : AppCompatActivity(R.layout.activity_images) {
 
     private val binding by viewBinding<ActivityImagesBinding>()
     private val image =

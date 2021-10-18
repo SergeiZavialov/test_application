@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.SimpleExoPlayer
+import ru.sergeyzavyalov.testapplication.R
 import ru.sergeyzavyalov.testapplication.databinding.ActivityExoplayerBinding
 
-class ExoplayerActivity : AppCompatActivity() {
+class ExoplayerActivity : AppCompatActivity(R.layout.activity_exoplayer) {
 
     private val binding by viewBinding<ActivityExoplayerBinding>()
 
@@ -52,6 +53,7 @@ class ExoplayerActivity : AppCompatActivity() {
     }
 
     private fun stopPlay() {
-        exoPlayer.stop(true)
+        exoPlayer.stop()
+        exoPlayer.clearMediaItems()
     }
 }
