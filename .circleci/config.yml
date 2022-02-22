@@ -21,18 +21,18 @@ workflows:
             only: master
               tags:
                 only: \d+.\d+.*
-                    - run:
-                    name: Download appcenter
-                    command: sudo npm install appcenter-cli -g
+                - run:
+                  name: Download appcenter
+                  command: sudo npm install appcenter-cli -g
 
-                    - run:
-                      name: Login
-                      command: appcenter login --token 010e83665109658e2e4f5760d507a9a34055583c
+                - run:
+                  name: Login
+                  command: appcenter login --token 010e83665109658e2e4f5760d507a9a34055583c
 
-                    - run:
-                      name: Build debug apk
-                      command: ./gradlew :app:assembleDebug
+                - run:
+                  name: Build debug apk
+                  command: ./gradlew :app:assembleDebug
 
-                    - run:
-                    name: Deliver to appcenter
-                    command: appcenter distribute release --debug --app SergeiZavialov/Test Application  --file app/build/outputs/apk/debug/app-debug.apk --group "Collaborators"
+                - run:
+                  name: Deliver to appcenter
+                  command: appcenter distribute release --debug --app SergeiZavialov/Test Application  --file app/build/outputs/apk/debug/app-debug.apk --group "Collaborators"
